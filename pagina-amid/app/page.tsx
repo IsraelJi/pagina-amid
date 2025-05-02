@@ -100,35 +100,31 @@ export default function Home() {
           </p>
           <div className='flex lg:flex-raw items-center mt-10 space-x-56 justify-center'>
             <Card
-              cargo='Socio Fundador'
-              estudio='Estudiante de Derecho'
-              nombre='Hector Javier'
+              cargo='Presidente'
+              estudio='Fundador'
+              nombre='Felipe Bravo'
+              url='https://i.pravatar.cc/150?u=a042581f4e29026704d'
+            />
+
+            <Card
+              cargo='Fundador'
+              estudio='Vicepresidente'
+              nombre='Javier Palomino'
               url='https://i.pravatar.cc/150?u=a042581f4e29026024d'
             />
             <Card
-              cargo='Tesorera'
-              estudio='Licenciada en Psicología'
-              nombre='Yetmari Carmona'
-              url='https://i.pravatar.cc/150?u=a042581f4e29026704d'
-            />
-            <Card
-              cargo='Coordinadora de Proyectos'
-              estudio='Licenciada en Educación Especial'
-              nombre='Zoey Lang'
+              cargo='Fundador'
+              estudio='Secretaria General'
+              nombre='Yetmary Corona'
               url='https://i.pravatar.cc/150?u=a04258114e29026702d'
             />
             <Card
-              cargo='Coordinadora de Comunicación'
-              estudio='Licenciada en Comunicación'
-              nombre='Zoey Lang'
+              cargo='Fundador'
+              estudio='Vocal de la Comisión'
+              nombre='Dulce Ciriaco'
               url='https://i.pravatar.cc/150?u=a04258114e29026702d'
             />
-            <Card
-              cargo='Coordinadora de Eventos'
-              estudio='Licenciada en Administración'
-              nombre='Zoey Lang'
-              url='https://i.pravatar.cc/150?u=a04258114e29026702d'
-            />
+          
           </div>
         </div>
         
@@ -213,6 +209,7 @@ export default function Home() {
         </div>
       )}
 
+      
 
       {activeSection === 'preguntas' && (
         <div className="mt-32">
@@ -222,7 +219,9 @@ export default function Home() {
       )}
 
 
+
       {activeSection === 'miembros' && (
+        
         <div id="miembros" className="mt-32">
           <h1 className="mt-10">Miembros</h1>
           <p className="text-center text-balance mt-10 font-abc w-screen text-2xl">
@@ -232,12 +231,12 @@ export default function Home() {
             <Card
               cargo='Socio Fundador'
               estudio='Estudiante de Derecho'
-              nombre='Hector Javier'
+              nombre='Javier Palomino'
               url='https://i.pravatar.cc/150?u=a042581f4e29026024d'
             />
             <Card
               cargo='Tesorera'
-              estudio='Licenciada en Psicología'
+              estudio='LicencPsicología'
               nombre='Yetmari Carmona'
               url='https://i.pravatar.cc/150?u=a042581f4e29026704d'
             />
