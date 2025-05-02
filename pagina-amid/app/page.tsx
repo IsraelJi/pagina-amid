@@ -4,6 +4,7 @@ import Intergrantes from '@/components/Integrantes';
 import Image from 'next/image';
 import '@/styles/page-m.css';
 import {Link} from "@heroui/link";
+import Card from '@/components/Cards';
 
 
 
@@ -96,10 +97,42 @@ export default function Home() {
       </div>
       <div>
 
-      <h1 className="mt-10">Contacto</h1>
-      <div className='w-96 justify-center mt-0'>
-      <Intergrantes /> 
-      </div> 
+      <h1 className="mt-10">Miembros</h1>
+      <p className=" text-center text-balance mt-10 font-abc w-screen text-2xl">
+      En AMID, contamos con un equipo diverso y comprometido que trabaja incansablemente para promover la inclusión y el bienestar de las personas con discapacidad. Nuestros miembros son apasionados defensores de los derechos humanos y están dedicados a crear un mundo más justo y equitativo para todos.
+      </p>
+      <div className='flex flex-row items-center mt-10 space-x-56 justify-center'>
+      <Card
+      cargo='Socio Fundador'
+      estudio='Ingeniero en Sistemas Computacionales'
+      nombre='Hector Javier'
+      url='https://i.pravatar.cc/150?u=a042581f4e29026024d'
+      />
+      <Card
+      cargo='Tesorera'
+      estudio='Licenciada en Psicología'
+      nombre='Yetmari Carmona'
+      url='https://i.pravatar.cc/150?u=a042581f4e29026704d'
+      />
+      <Card
+      cargo='Coordinadora de Proyectos'
+      estudio='Licenciada en Educación Especial'
+      nombre='Zoey Lang'
+      url='https://i.pravatar.cc/150?u=a04258114e29026702d'
+      />
+      <Card
+      cargo='Coordinadora de Comunicación'
+      estudio='Licenciada en Comunicación'
+      nombre='Zoey Lang'
+      url='https://i.pravatar.cc/150?u=a04258114e29026702d'
+      />
+      <Card
+      cargo='Coordinadora de Eventos'
+      estudio='Licenciada en Administración'
+      nombre='Zoey Lang'
+      url='https://i.pravatar.cc/150?u=a04258114e29026702d'
+      />
+      </div>
       </div>
      
      <button className='' > <Link href='inicio' onClick={(e) => handleScroll(e,'inicio')}>Hola</Link></button>

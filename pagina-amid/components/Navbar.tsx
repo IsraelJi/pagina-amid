@@ -36,6 +36,11 @@ export default function App() {
             Contactos
           </Link>
         </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#">
+            Miembros
+          </Link>
+        </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
         
