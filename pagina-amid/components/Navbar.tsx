@@ -28,13 +28,16 @@ export default function App() {
         </NavbarItem>
         <NavbarItem isActive>
           <Link aria-current="page" href="#conocenos" >
-            Logros
+            Comisiones
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#">
-            Contactos
+            Proyectos
           </Link>
+        </NavbarItem>
+        <NavbarItem>
+          Preguntas Frecuentes
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#">

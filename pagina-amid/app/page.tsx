@@ -5,6 +5,7 @@ import Image from 'next/image';
 import '@/styles/page-m.css';
 import {Link} from "@heroui/link";
 import Card from '@/components/Cards';
+import Preguntas from '@/components/Preguntas'
 
 
 
@@ -12,13 +13,7 @@ import Card from '@/components/Cards';
 export default function Home() {
   interface ScrollEvent extends React.MouseEvent<HTMLAnchorElement, MouseEvent> {}
 
-  const handleScroll = (e: ScrollEvent, id: string): void => {
-    e.preventDefault();
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  
   return (
     <main className="main">
       
@@ -101,10 +96,10 @@ export default function Home() {
       <p className=" text-center text-balance mt-10 font-abc w-screen text-2xl">
       En AMID, contamos con un equipo diverso y comprometido que trabaja incansablemente para promover la inclusión y el bienestar de las personas con discapacidad. Nuestros miembros son apasionados defensores de los derechos humanos y están dedicados a crear un mundo más justo y equitativo para todos.
       </p>
-      <div className='flex flex-row items-center mt-10 space-x-56 justify-center'>
+      <div className='flex lg:flex-raw items-center mt-10 space-x-56 justify-center'>
       <Card
       cargo='Socio Fundador'
-      estudio='Ingeniero en Sistemas Computacionales'
+      estudio='Estudiante de Derecho'
       nombre='Hector Javier'
       url='https://i.pravatar.cc/150?u=a042581f4e29026024d'
       />
@@ -134,8 +129,12 @@ export default function Home() {
       />
       </div>
       </div>
+
+      <div>
+        <Preguntas/>
+      </div>
      
-     <button className='' > <Link href='inicio' onClick={(e) => handleScroll(e,'inicio')}>Hola</Link></button>
+
      </main>
     
 

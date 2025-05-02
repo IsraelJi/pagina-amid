@@ -11,7 +11,7 @@ export default function App({cargo, estudio, nombre, url}: CardProps) {
 
 
   return (
-    <Card className="py-4">
+    <Card className="flex py-2 hover:bg-cyan-300 hover:transform hover:scale-105 transition-transform duration-300">
       <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
         <p className="text-tiny uppercase font-bold">{cargo}</p>
         <small className="text-default-500">{estudio}</small>
