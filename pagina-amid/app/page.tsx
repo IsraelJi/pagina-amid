@@ -129,6 +129,10 @@ export default function Home() {
         </div>
         
         <div>
+<<<<<<< Updated upstream
+=======
+        <h1 className="mt-10">Preguntas Frecuentas</h1>
+>>>>>>> Stashed changes
           <Preguntas />
         </div>
       </>
