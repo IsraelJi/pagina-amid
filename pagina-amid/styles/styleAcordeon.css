@@ -1,0 +1,109 @@
+.accordion-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos para los ítems del accordion */
+  [data-heroui-accordion-item] {
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  
+  /* Estilos para el título y subtítulo */
+  [data-heroui-accordion-item] h3 {
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 0.75rem 1rem;
+  }
+  
+  [data-heroui-accordion-item] p {
+    font-size: 0.875rem;
+    margin: 0;
+    padding: 0 1rem 0.75rem;
+  }
+  
+  /* Estilos para el contenido */
+  [data-heroui-accordion-item] > div {
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Media Queries para responsividad */
+  
+  /* Pantallas muy pequeñas (teléfonos pequeños, hasta 400px) */
+  @media (max-width: 400px) {
+    .accordion-container {
+      padding: 0.25rem;
+    }
+  
+    [data-heroui-accordion-item] h3 {
+      font-size: 0.875rem;
+      padding: 0.4rem 0.6rem;
+    }
+  
+    [data-heroui-accordion-item] p {
+      font-size: 0.65rem;
+      padding: 0 0.6rem 0.4rem;
+    }
+  
+    [data-heroui-accordion-item] > div {
+      padding: 0.6rem;
+      font-size: 0.75rem;
+    }
+  }
+  
+  /* Pantallas pequeñas (teléfonos, hasta 600px) */
+  @media (max-width: 600px) and (min-width: 401px) {
+    .accordion-container {
+      padding: 0.5rem;
+    }
+  
+    [data-heroui-accordion-item] h3 {
+      font-size: 1rem;
+      padding: 0.5rem 0.75rem;
+    }
+  
+    [data-heroui-accordion-item] p {
+      font-size: 0.75rem;
+      padding: 0 0.75rem 0.5rem;
+    }
+  
+    [data-heroui-accordion-item] > div {
+      padding: 0.75rem;
+      font-size: 0.875rem;
+    }
+  }
+  
+  /* Pantallas medianas (tabletas, hasta 900px) */
+  @media (max-width: 900px) and (min-width: 601px) {
+    [data-heroui-accordion-item] h3 {
+      font-size: 1.125rem;
+    }
+  
+    [data-heroui-accordion-item] p {
+      font-size: 0.825rem;
+    }
+  
+    [data-heroui-accordion-item] > div {
+      font-size: 0.9375rem;
+    }
+  }
+  
+  /* Pantallas grandes (más de 900px) */
+  @media (min-width: 901px) {
+    [data-heroui-accordion-item] h3 {
+      font-size: 1.5rem;
+    }
+  
+    [data-heroui-accordion-item] p {
+      font-size: 1rem;
+    }
+  
+    [data-heroui-accordion-item] > div {
+      font-size: 1.125rem;
+    }
+  }
