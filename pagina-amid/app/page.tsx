@@ -22,17 +22,18 @@ export default function Home() {
     <main className="main">
       
       <Navbar />
-      <div className="container w-auto mx-auto max-w-7xl pt-16 px-6 flex-grow  mt-20">
+      <div className="container w-auto mx-auto max-w-7xl pt-16 px-6 flex-grow  mt-48">
         <Image
-          src="/imgs/logo.png"
+          id='inicio'
+          src="/imgs/amidIcono.png"
           alt="Logo de AMID"
           width={300}
           height={50}
           className="mx-auto -mt-40 -z-10"
         />
-        <div className='textos -mt-20 font-bold z-10'>
-        <p className="text-lg text-center z-10">Juntos por la inclusión, construyendo un mundo sin barreras.</p>
-        <p className="text-lg text-center " >Conócenos, nuestros logros y contactos</p>
+        <div className='textos mt-20 font-bold z-10'>
+        <p className="text-lg text-center z-10 animate-ty">Juntos por la inclusión, construyendo un mundo sin barreras.</p>
+        <p className="text-lg text-center animate-typing" >Conócenos, nuestros logros y contactos</p>
         </div>
         
       </div>
@@ -51,7 +52,7 @@ export default function Home() {
           alt="Logo de AMID"
           width={300}
           height={50}
-          className="mx-auto mt-10 shadow-2xl rounded-full "
+          className="img1 mx-auto mt-10 shadow-2xl rounded-full " 
         />
       </div>
       <div>
