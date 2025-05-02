@@ -28,32 +28,71 @@ export default function Home() {
           src="/imgs/amidIcono.png"
           alt="Logo de AMID"
           width={300}
-          height={50}
+          height={20}
           className="mx-auto -mt-40 -z-10"
         />
-        <div className='textos mt-20 font-bold z-10'>
-        <p className="text-lg text-center z-10 animate-ty">Juntos por la inclusión, construyendo un mundo sin barreras.</p>
-        <p className="text-lg text-center animate-typing" >Conócenos, nuestros logros y contactos</p>
+        <div className='textos mt-20 font-abc z-10'>
+        <p className="text-2xl text-center z-10 animate-ty">Juntos por la inclusión, construyendo un mundo sin barreras.</p>
+        <p className="text-2xl text-center animate-typing" >Conócenos, nuestros logros y contactos</p>
         </div>
         
       </div>
       <video src= "imgs/videofondo.mp4" autoPlay loop muted className='video'></video>
       <div>
-      <h1 className="mt-40">¿Quiénes somos?</h1>
-      <p className="text-balance text-center mt-10">
+      <h1 className="mt-40 ">CONOCENOS</h1>
+      <p className="text-balance text-center mt-10 font-abc w-auto text-2xl">
       En AMID, trabajamos con pasión para transformar vidas y promover un mundo más inclusivo. 
       Somos una asociación dedicada a apoyar a personas con discapacidad, sus familias y 
       comunidades, ofreciendo recursos, programas y servicios que fomentan la autonomía, 
       la dignidad y la igualdad de oportunidades.
       </p>
+      <div className=' flex flex-row items-center mt-10 space-x-56 justify-center'>
+        <div className='flex flex-col items-center'>
       <Image
-          id='inicio'
-          src="/imgs/braileConocenos.jpeg"
+          id='iconos'
+          src = "/imgs/iconoObjetivos.svg"
           alt="Logo de AMID"
-          width={300}
+          width={150}
           height={50}
-          className="img1 mx-auto mt-10 shadow-2xl rounded-full " 
-        />
+          className="img2 "
+        ></Image>
+        <h1 className='mt-10'>Objetivo</h1>
+       <p className='text-wrap font-abc  text-center text-lg w-80 mt-5'>
+        Empoderar a las personas con discapacidad mediante el acceso a herramientas, formación y espacios inclusivos que les permitan desarrollar su potencial y participar plenamente en la sociedad.
+        </p>
+        </div>
+        <div className='concocenos-text flex flex-col items-center'>
+    <Image
+          id='iconos'
+          src = "/imgs/iconoValores.svg"
+          alt="Logo de AMID"
+          width={150}
+          height={50}
+          className="img2  "
+        ></Image>
+        <h1 className='mt-10'>Valores</h1>
+        <p className='concocenos-text font-abc text-lg text-wrap text-center w-80 mt-5'>
+        Promovemos la inclusión, la diversidad y el respeto por los derechos humanos de todas las personas, independientemente de sus capacidades. Fomentamos la colaboración y el trabajo en equipo para lograr un impacto positivo en la comunidad.
+        </p>
+        </div>
+        <div className='flex flex-col items-center'>
+      <Image
+          id='iconos'
+          src = "/imgs/iconoVision.svg"
+          alt="Logo de AMID"
+          width={150}
+          height={50}
+          className="img2 "
+        ></Image>
+        <h1 className='mt-10'>Visión</h1>
+        <p className='concocenos-text font-abc text-balance text-lg text-center w-80 mt-5'>
+        Ser un referente en la promoción de la inclusión y el bienestar de las personas con discapacidad, trabajando en colaboración con la comunidad para construir un futuro más justo y equitativo.
+        </p>
+        </div>
+        
+        
+      </div>
+      
       </div>
       <div>
 

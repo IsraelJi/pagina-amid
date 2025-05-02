@@ -12,6 +12,9 @@ const config = {
       fontFamily: {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-mono)"],
+        abc: ["Belanosima","normal"],
+        titulos: ["Lexend","sans-serif"],
+
       },
     },
   },
