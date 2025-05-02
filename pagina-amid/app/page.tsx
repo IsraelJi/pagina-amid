@@ -129,6 +129,7 @@ export default function Home() {
         </div>
         
         <div>
+        <h1 className="mt-10">Proyectos</h1>
           <Preguntas />
         </div>
       </>
