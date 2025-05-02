@@ -124,6 +124,11 @@ export default function Home() {
               nombre='Dulce Ciriaco'
               url='https://i.pravatar.cc/150?u=a04258114e29026702d'
             />
+            <Card
+              cargo='dada'
+              estudio='dsad'
+              nombre='dadwaw'
+              url='https://i.pravatar.cc/150?u=a04258114e29026702d'/>
           
           </div>
         </div>
