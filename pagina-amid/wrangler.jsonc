@@ -1,0 +1,5 @@
+{
+    "name": "pagina-amid",
+    "compatibility_date": "2025-05-03",
+    "main": "app/page.tsx"
+  }

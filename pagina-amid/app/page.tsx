@@ -88,7 +88,7 @@ export default function Home() {
               alt="Icono Objetivos"
               width={120}
               height={40}
-              className="w-24 sm:w-32"
+              className="img2 w-24 sm:w-32"
             />
             <h1 className='mt-6 text-xl sm:text-2xl'>Objetivo</h1>
             <p className='font-abc text-center text-sm sm:text-lg mt-3'>
@@ -105,7 +105,7 @@ export default function Home() {
               alt="Icono Valores"
               width={120}
               height={40}
-              className="w-24 sm:w-32"
+              className="img2 w-24 sm:w-32"
             />
             <h1 className='mt-6 text-xl sm:text-2xl'>Valores</h1>
             <p className='font-abc text-center text-sm sm:text-lg mt-3'>
@@ -122,7 +122,7 @@ export default function Home() {
               alt="Icono Visión"
               width={120}
               height={40}
-              className="w-24 sm:w-32"
+              className="img2 w-24 sm:w-32"
             />
             <h1 className='mt-6 text-xl sm:text-2xl'>Visión</h1>
             <p className='font-abc text-center text-sm sm:text-lg mt-3'>
