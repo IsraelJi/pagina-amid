@@ -3,6 +3,8 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, NavbarMenuToggle,
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
+
+
 export default function App({ onNavigate }: { onNavigate: (section: string) => void }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -46,9 +48,10 @@ export default function App({ onNavigate }: { onNavigate: (section: string) => v
   }, [lastScrollY]);
 
   return (
+    
     <Navbar 
-      shouldHideOnScroll={false}
-      className={`bg-sky-50 fixed top-0 left-0 right-0 h-28 z-50 transition-transform duration-300 ${
+      shouldHideOnScroll={true}
+      className={`bg-sky-200 fixed top-0 left-0 right-0 h-28 z-50 transition-transform duration-300 ${
         isVisible ? 'translate-y-0' : '-translate-y-full'
       }`}
       onMenuOpenChange={setIsMenuOpen}
@@ -67,7 +70,7 @@ export default function App({ onNavigate }: { onNavigate: (section: string) => v
 
      
       <NavbarContent className="hidden sm:flex gap-6" justify="center">
-        {['conocenos', 'comisiones', 'proyectos', 'preguntas', 'miembros'].map((item) => (
+        {['conocenos', 'comisiones', 'proyectos', 'miembros', 'preguntas'].map((item) => (
           <NavbarItem key={item}>
             <Link 
               color="foreground" 
@@ -89,8 +92,8 @@ export default function App({ onNavigate }: { onNavigate: (section: string) => v
         <NavbarMenuToggle />
       </NavbarContent>
 
-      <NavbarMenu className="bg-sky-50 mt-28">
-        {['conocenos', 'comisiones', 'proyectos', 'preguntas', 'miembros'].map((item, index) => (
+      <NavbarMenu  className="bg-sky-50 mt-10 w-40">
+        {['conocenos', 'comisiones', 'proyectos', 'miembros', 'preguntas'].map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
               color="foreground"
