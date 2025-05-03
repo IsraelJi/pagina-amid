@@ -13,7 +13,6 @@ export default function Home() {
   const inicioRef = useRef<HTMLDivElement>(null);
   const conocenosRef = useRef<HTMLDivElement>(null);
   const comisionesRef = useRef<HTMLDivElement>(null);
-  const proyectosRef = useRef<HTMLDivElement>(null);
   const preguntasRef = useRef<HTMLDivElement>(null);
   const miembrosRef = useRef<HTMLDivElement>(null);
 
@@ -31,9 +30,6 @@ export default function Home() {
         break;
       case 'comisiones': 
         comisionesRef.current?.scrollIntoView({ behavior: 'smooth' });
-        break;
-      case 'proyectos': 
-        proyectosRef.current?.scrollIntoView({ behavior: 'smooth' });
         break;
       case 'preguntas': 
         preguntasRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -144,37 +140,7 @@ export default function Home() {
         <Carrusel />
       </div>
       
-      {/* Sección Proyectos */}
-      <div ref={proyectosRef} className="px-4 sm:px-6 py-20 bg-gray-50">
-        <h1 className="text-3xl sm:text-4xl text-center font-bold">PROYECTOS</h1>
-        <p className="text-center mt-6 font-abc text-lg sm:text-xl max-w-2xl mx-auto">
-          Conoce los proyectos que estamos desarrollando para promover la inclusión y el bienestar.
-        </p>
-        <div className="mt-10 max-w-4xl mx-auto">
-          <div className="bg-white p-6 rounded-lg shadow-md mb-6">
-            <h2 className="text-xl font-semibold mb-3">Proyecto “Placas en Braille” – Asociación AMID
-            </h2>
-            <p className="text-gray-600 mb-3">
-                Esta iniciativa tiene como finalidad implementar señalizaciones inclusivas en espacios públicos y privados.
-            </p>
-            <span className="text-sm text-blue-600">En progreso</span>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md mb-6">
-            <h2 className="text-xl font-semibold mb-3">Talleres de Concientización</h2>
-            <p className="text-gray-600 mb-3">
-              Programa de talleres educativos en escuelas y empresas.
-            </p>
-            <span className="text-sm text-green-600">Activo</span>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <h2 className="text-xl font-semibold mb-3">Red de Apoyo</h2>
-            <p className="text-gray-600 mb-3">
-              Creación de una red comunitaria de apoyo para familias.
-            </p>
-            <span className="text-sm text-yellow-600">Planificación</span>
-          </div>
-        </div>
-      </div>
+
       
       {/* Sección Miembros */}
       <div ref={miembrosRef} className="px-4 sm:px-6 py-10">
