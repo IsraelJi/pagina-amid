@@ -5,7 +5,7 @@ const SocialButtons: React.FC = () => {
     whatsapp: 'https://wa.me/7226916360', 
     instagram: 'https://www.instagram.com/amid_mx?igsh=MWZscDBvNzE0Zmk3Zg==',
     facebook: 'https://www.facebook.com/profile.php?id=61575126480064&mibextid=wwXIfr&rdid=NrAtcMQRenxpMGtT&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1YjYKcVqrk%2F%3Fmibextid%3DwwXIfr#',
-    email: 'amidmx@outlook.com', 
+    email: 'mailto:amidmx@outlook.com', 
     tiktok: 'https://www.tiktok.com/@amid_mx?_t=ZS-8w2McGCTLDs&_r=1',
     x: 'https://x.com/amid_mx?t=sRGXf1fSGiU_tvrbLGlN2A',
   };
