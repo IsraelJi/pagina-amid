@@ -67,7 +67,7 @@ export default function Home() {
         </div>
       </div>
       
-      <video src="imgs/videofondo.mp4" autoPlay loop muted className='video'></video>
+     
       
       {/* Sección Conócenos */}
       <div ref={conocenosRef} className="px-4 sm:px-6 py-10">

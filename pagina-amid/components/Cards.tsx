@@ -1,16 +1,6 @@
 import { Card, CardHeader, CardBody, Image } from "@heroui/react";
 
-export default function CardComponent({
-  cargo,
-  estudio,
-  nombre,
-  url
-}: {
-  cargo: string;
-  estudio: string;
-  nombre: string;
-  url: string;
-}) {
+export default function CardComponent({cargo,estudio,nombre,url}: {cargo: string;estudio: string;nombre: string;url: string;}) {
   return (
     <Card 
       className="py-4 w-full sm:w-[280px] transition-all duration-300 ease-in-out 
