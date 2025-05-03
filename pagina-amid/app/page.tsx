@@ -15,6 +15,7 @@ export default function Home() {
   const comisionesRef = useRef<HTMLDivElement>(null);
   const preguntasRef = useRef<HTMLDivElement>(null);
   const miembrosRef = useRef<HTMLDivElement>(null);
+  const contactoRef = useRef<HTMLDivElement>(null);
 
 
   const handleNavigation = (section: string) => {
@@ -36,6 +37,9 @@ export default function Home() {
         break;
       case 'miembros': 
         miembrosRef.current?.scrollIntoView({ behavior: 'smooth' });
+        break;
+      case 'contacto':
+        contactoRef.current?.scrollIntoView({ behavior: 'smooth' });
         break;
       default:
         inicioRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -188,7 +192,7 @@ export default function Home() {
       
         
       {/* Sección Contacto */}
-      <div className="px-4 sm:px-6 py-10 bg-gray-50">
+      <div ref={contactoRef} className="px-4 sm:px-6 py-10">
         <h1 className="text-3xl sm:text-4xl text-center mt-10">CONTACTO</h1>
         <p className="text-center font-abc text-lg sm:text-2xl mt-6">
           Si tienes alguna pregunta o deseas más información, no dudes en contactarnos.

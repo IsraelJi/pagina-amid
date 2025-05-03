@@ -70,7 +70,7 @@ export default function App({ onNavigate }: { onNavigate: (section: string) => v
 
      
       <NavbarContent className="hidden sm:flex gap-6" justify="center">
-        {['conocenos', 'comisiones', 'proyectos', 'miembros', 'preguntas'].map((item) => (
+        {['conocenos', 'comisiones', 'miembros', 'preguntas', 'contacto'].map((item) => (
           <NavbarItem key={item}>
             <Link 
               color="foreground" 
@@ -93,7 +93,7 @@ export default function App({ onNavigate }: { onNavigate: (section: string) => v
       </NavbarContent>
 
       <NavbarMenu  className="bg-sky-50 mt-10 w-40">
-        {['conocenos', 'comisiones', 'miembros', 'preguntas'].map((item, index) => (
+        {['conocenos', 'comisiones', 'miembros', 'preguntas', 'contacto'].map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
               color="foreground"
