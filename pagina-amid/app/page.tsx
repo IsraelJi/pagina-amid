@@ -1,6 +1,4 @@
 'use client';
-
-
 import { useRef } from 'react';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
@@ -8,8 +6,6 @@ import '@/styles/page-m.css';
 import Card from '@/components/Cards';
 import Preguntas from '@/components/Preguntas';
 import Carrusel from '@/components/Carrusel';
-
-export const runtime = "edge";
 
 export default function Home() {
   
@@ -191,8 +187,8 @@ export default function Home() {
         
         <div className='flex flex-wrap justify-center gap-6 mt-10'>
           <Card
-            cargo='Fundador'
-            estudio='Presidente'
+            cargo='Presidente'
+            estudio='Fundador'
             nombre='Felipe Bravo'
             url='https://i.pravatar.cc/150?u=a042581f4e29026704d'
           />

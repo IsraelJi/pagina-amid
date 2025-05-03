@@ -6,8 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint --fix",
-    "pages:build": "npx @cloudflare/next-on-pages"
+    "lint": "eslint --fix"
   },
   "dependencies": {
     "@heroui/accordion": "^2.2.16",
@@ -36,7 +35,6 @@
     "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.13.12",
     "@eslint/compat": "1.2.8",
     "@eslint/eslintrc": "3.3.1",
     "@eslint/js": "9.25.1",
