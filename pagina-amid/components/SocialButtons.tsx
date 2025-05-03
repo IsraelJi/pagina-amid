@@ -4,8 +4,10 @@ const SocialButtons: React.FC = () => {
   const socialLinks = {
     whatsapp: 'https://wa.me/1234567890', // Enlace temporal, cámbialo más tarde
     instagram: 'https://www.instagram.com/amid_mx?igsh=MWZscDBvNzE0Zmk3Zg==',
-    facebook: 'https://www.facebook.com/example', // Enlace temporal, cámbialo más tarde
+    facebook: 'https://www.facebook.com/profile.php?id=61575126480064&mibextid=wwXIfr&rdid=NrAtcMQRenxpMGtT&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1YjYKcVqrk%2F%3Fmibextid%3DwwXIfr#',
     email: 'mailto:example@example.com', // Enlace temporal, cámbialo más tarde
+    tiktok: 'https://www.tiktok.com/@amid_mx?_t=ZS-8w2McGCTLDs&_r=1',
+    x: 'https://x.com/amid_mx?t=sRGXf1fSGiU_tvrbLGlN2A',
   };
 
   return (
@@ -61,6 +63,42 @@ const SocialButtons: React.FC = () => {
           className="w-6 h-6 sm:w-8 sm:h-8"
         >
           <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+        </svg>
+      </a>
+
+      {/* Botón de TikTok */}
+      <a
+        href={socialLinks.tiktok}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-black text-white rounded-full hover:bg-gray-900 transition-colors duration-300"
+        aria-label="Visitar TikTok"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          className="w-6 h-6 sm:w-8 sm:h-8"
+        >
+          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 1.19.26V9.38a6.35 6.35 0 0 0-1.19-.1A6.34 6.34 0 0 0 4 20.29a6.34 6.34 0 0 0 10.86-4.43v-7a8.29 8.29 0 0 0 4.65 1.67V6.69h.08z"/>
+        </svg>
+      </a>
+
+      {/* Botón de X */}
+      <a
+        href={socialLinks.x}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-gray-800 text-white rounded-full hover:bg-gray-900 transition-colors duration-300"
+        aria-label="Visitar X"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          className="w-6 h-6 sm:w-8 sm:h-8"
+        >
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
         </svg>
       </a>
 
