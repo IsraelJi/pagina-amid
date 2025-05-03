@@ -1,4 +1,4 @@
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@heroui/react";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link} from "@heroui/react";
 import Image from "next/image";
 
 export default function App({ onNavigate }: { onNavigate: (section: string) => void }){
@@ -7,7 +7,6 @@ export default function App({ onNavigate }: { onNavigate: (section: string) => v
       <NavbarBrand>
         <p className="font-bold text-inherit text-2xl">
           <Image
-            id='inicio'
             src="/imgs/amidLogo.png"
             alt="Logo de AMID"
             width={200}
@@ -44,8 +43,6 @@ export default function App({ onNavigate }: { onNavigate: (section: string) => v
             Miembros
           </Link>
         </NavbarItem>
-      </NavbarContent>
-      <NavbarContent justify="end">
       </NavbarContent>
     </Navbar>
   );
