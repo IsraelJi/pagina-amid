@@ -6,6 +6,7 @@ import '@/styles/page-m.css';
 import Card from '@/components/Cards';
 import Preguntas from '@/components/Preguntas';
 import Carrusel from '@/components/Carrusel';
+import SocialButtons from '@/components/SocialButtons';
 
 export default function Home() {
   
@@ -218,6 +219,19 @@ export default function Home() {
         <h1 className="text-3xl sm:text-4xl text-center mt-10">PREGUNTAS FRECUENTES</h1>
         <Preguntas />
       </div>
+      
+        
+      {/* Sección Contacto */}
+      <div className="px-4 sm:px-6 py-10 bg-gray-50">
+        <h1 className="text-3xl sm:text-4xl text-center mt-10">CONTACTO</h1>
+        <p className="text-center font-abc text-lg sm:text-2xl mt-6">
+          Si tienes alguna pregunta o deseas más información, no dudes en contactarnos.
+        </p>
+          <SocialButtons /> 
+      </div>
+          
+
+
     </main>
   );
 }
