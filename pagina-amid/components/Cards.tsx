@@ -1,29 +1,34 @@
-import {Card, CardHeader, CardBody, Image} from "@heroui/react";
+import { Card, CardHeader, CardBody, Image } from "@heroui/react";
 
-interface CardProps {
-    cargo: string;
-    estudio: string;
-    nombre: string;
-    url: string;
-}
-
-export default function App({cargo, estudio, nombre, url}: CardProps) {
-
-
+export default function CardComponent({
+  cargo,
+  estudio,
+  nombre,
+  url
+}: {
+  cargo: string;
+  estudio: string;
+  nombre: string;
+  url: string;
+}) {
   return (
-    <Card className="flex py-2 hover:bg-cyan-300 hover:transform hover:scale-105 transition-transform duration-300">
-      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-        <p className="text-tiny uppercase font-bold">{cargo}</p>
-        <small className="text-default-500">{estudio}</small>
-        <h4 className="font-bold text-large">{nombre}</h4>
-      </CardHeader>
-      <CardBody className="overflow-visible py-2">
+    <Card 
+      className="py-4 w-full sm:w-[280px] transition-all duration-300 ease-in-out 
+                hover:scale-105 hover:shadow-lg hover:bg-cyan-100 hover:shadow-cyan-500/20"
+    >
+      <CardHeader className="pb-0 pt-2 px-4 flex-col items-center">
         <Image
-          alt="Card background"
-          className="object-cover rounded-xl"
+          alt={nombre}
+          className="object-cover rounded-full hover:ring-2 hover:ring-cyan-500"
           src={url}
-          width={270}
+          width={120}
+          height={120}
         />
+      </CardHeader>
+      <CardBody className="overflow-visible py-2 text-center">
+        <h4 className="font-bold text-lg group-hover:text-cyan-800">{nombre}</h4>
+        <small className="text-default-500 font-semibold group-hover:text-cyan-600">{cargo}</small>
+        <p className="text-sm mt-2 group-hover:text-cyan-700">{estudio}</p>
       </CardBody>
     </Card>
   );

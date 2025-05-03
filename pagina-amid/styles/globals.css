@@ -3,3 +3,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.main {
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  /* Ajustes responsivos */
+  @media (max-width: 640px) {
+    .textos p {
+      font-size: 1.1rem;
+    }
+    
+    .concocenos-text {
+      padding: 0 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .flex-row.space-x-56 {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+    }
+    
+    .flex-row.space-x-56 > div {
+      margin-bottom: 2rem;
+    }
+  }
