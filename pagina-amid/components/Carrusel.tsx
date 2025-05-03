@@ -6,8 +6,8 @@ const Carrusel: React.FC = () => {
   const slides = [
     {
       image: 'https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg',
-      title: 'Comisión a Inclusión para Personas con Discapacidad Visual.',
-      description: 'Tiene como objetivo fundamental velar por la promoción, protección y garantía de los derechos de las personas con discapacidad visual.',
+      title: 'Etiqueta de la primera diapositiva',
+      description: 'Contenido representativo para la primera diapositiva.',
     },
     {
       image: 'https://tecdn.b-cdn.net/img/Photos/Slides/img%20(22).jpg',
@@ -34,7 +34,7 @@ const Carrusel: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full max-w-7xl mx-auto">
+    <div className="relative w-full max-w-7xl mx-auto min-h-[60vh] sm:min-h-[50vh]">
       {/* Indicadores del carrusel */}
       <div className="absolute bottom-0 left-0 right-0 z-[2] mx-[10%] mb-2 flex list-none justify-center p-0 sm:mb-4 sm:mx-[15%]">
         {slides.map((_, index) => (
@@ -63,10 +63,10 @@ const Carrusel: React.FC = () => {
           >
             <img
               src={slide.image}
-              className="block w-full h-auto object-cover"
+              className="block w-full h-[60vh] sm:h-[50vh] object-cover"
               alt={`Diapositiva ${index + 1}`}
             />
-            <div className="absolute inset-x-[10%] bottom-3 py-3 text-center text-white bg-black bg-opacity-50 sm:inset-x-[15%] sm:bottom-5 sm:py-5 md:block">
+            <div className="absolute inset-x-[10%] bottom-3 py-3 text-center text-white bg-black bg-opacity-50 sm:inset-x-[15%] sm:bottom-5 sm:py-5">
               <h5 className="text-base sm:text-xl">{slide.title}</h5>
               <p className="text-sm sm:text-base">{slide.description}</p>
             </div>
