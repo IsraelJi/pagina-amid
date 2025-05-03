@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
     <footer className="bg-blue-100 text-gray-800 py-4 text-center">
       <div className="container mx-auto px-4">
         <p className="text-sm">
-          © 2025 Asociación Mexicana de Inclusión de Discapacitados (AMID). Todos los derechos reservados.
+          © 2025 Asociación Mexicana de Inclusión a los Discapacitados (AMID). Todos los derechos reservados.
         </p>
         <p className="text-sm mt-2">
           <a
