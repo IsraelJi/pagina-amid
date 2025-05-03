@@ -6,8 +6,8 @@ const Carrusel: React.FC = () => {
   const slides = [
     {
       image: 'https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg',
-      title: 'Etiqueta de la primera diapositiva',
-      description: 'Contenido representativo para la primera diapositiva.',
+      title: 'Comisión a Inclusión para Personas con Discapacidad Visual.',
+      description: 'Tiene como objetivo fundamental velar por la promoción, protección y garantía de los derechos de las personas con discapacidad visual.',
     },
     {
       image: 'https://tecdn.b-cdn.net/img/Photos/Slides/img%20(22).jpg',
