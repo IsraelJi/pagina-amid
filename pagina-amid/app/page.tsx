@@ -7,6 +7,7 @@ import Card from '@/components/Cards';
 import Preguntas from '@/components/Preguntas';
 import Carrusel from '@/components/Carrusel';
 import SocialButtons from '@/components/SocialButtons';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   
@@ -139,7 +140,6 @@ export default function Home() {
         <h1 className="text-3xl sm:text-4xl text-center font-bold">COMISIONES</h1>
         <p className="text-center mt-6 font-abc text-lg sm:text-xl max-w-2xl mx-auto mb-8">
           Esta sección muestra información sobre las diferentes comisiones de trabajo en nuestra organización.
-          Próximamente tendremos más detalles sobre cada una de ellas.
         </p>
         <Carrusel />
       </div>
@@ -175,12 +175,6 @@ export default function Home() {
             nombre='Yetmary Corona'
             url='https://i.pravatar.cc/150?u=a04258114e29026702d'
           />
-          <Card
-            cargo='Fundador'
-            estudio='Vocal de la Comisión'
-            nombre='Dulce Ciriaco'
-            url='https://i.pravatar.cc/150?u=a04258114e29026702d'
-          />
         </div>
       </div>
       
@@ -199,6 +193,9 @@ export default function Home() {
         </p>
           <SocialButtons /> 
       </div>
+
+      {/* Footer */}
+      <Footer />
           
 
 
