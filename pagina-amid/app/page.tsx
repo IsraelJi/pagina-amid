@@ -5,6 +5,7 @@ import Image from 'next/image';
 import '@/styles/page-m.css';
 import Card from '@/components/Cards';
 import Preguntas from '@/components/Preguntas';
+import Carrusel from '@/components/Carrusel';
 
 export default function Home() {
   
@@ -139,20 +140,7 @@ export default function Home() {
           Esta sección muestra información sobre las diferentes comisiones de trabajo en nuestra organización.
           Próximamente tendremos más detalles sobre cada una de ellas.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <h2 className="text-xl font-semibold mb-3">Comisión de Educación</h2>
-            <p className="text-gray-600">Encargada de programas educativos y capacitaciones.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <h2 className="text-xl font-semibold mb-3">Comisión de Eventos</h2>
-            <p className="text-gray-600">Organización de actividades y encuentros comunitarios.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <h2 className="text-xl font-semibold mb-3">Comisión de Proyectos</h2>
-            <p className="text-gray-600">Desarrollo de iniciativas para la inclusión.</p>
-          </div>
-        </div>
+        <Carrusel />
       </div>
       
       {/* Sección Proyectos */}
@@ -163,9 +151,10 @@ export default function Home() {
         </p>
         <div className="mt-10 max-w-4xl mx-auto">
           <div className="bg-white p-6 rounded-lg shadow-md mb-6">
-            <h2 className="text-xl font-semibold mb-3">Proyecto "Accesibilidad para Todos"</h2>
+            <h2 className="text-xl font-semibold mb-3">Proyecto “Placas en Braille” – Asociación AMID
+            </h2>
             <p className="text-gray-600 mb-3">
-              Iniciativa para mejorar la accesibilidad en espacios públicos de nuestra comunidad.
+                Esta iniciativa tiene como finalidad implementar señalizaciones inclusivas en espacios públicos y privados.
             </p>
             <span className="text-sm text-blue-600">En progreso</span>
           </div>
