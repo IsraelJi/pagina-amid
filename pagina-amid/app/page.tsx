@@ -136,7 +136,7 @@ export default function Home() {
        {/* Sección Comisiones*/}
        <div ref={comisionesRef} className="px-4 sm:px-6 py-20">
         <h1 className="text-3xl sm:text-4xl text-center font-bold">COMISIONES</h1>
-        <p className="text-center mt-6 font-abc text-lg sm:text-xl max-w-2xl mx-auto">
+        <p className="text-center mt-6 font-abc text-lg sm:text-xl max-w-2xl mx-auto mb-8">
           Esta sección muestra información sobre las diferentes comisiones de trabajo en nuestra organización.
           Próximamente tendremos más detalles sobre cada una de ellas.
         </p>
