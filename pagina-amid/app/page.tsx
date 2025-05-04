@@ -60,13 +60,11 @@ export default function Home() {
           height={20}
           className="mx-auto -mt-40 -z-10 w-full max-w-[300px]"
         />
-        <div className='textos mt-20 font-abc z-10'>
+        <div className='textos mt-10 font-abc z-10'>
           <p className="text-xl sm:text-2xl text-center z-10 animate-ty">
-            Juntos por la inclusión, construyendo un mundo sin barreras.
+          La inclusión es la raíz de un México más alto.
           </p>
-          <p className="text-xl sm:text-2xl text-center animate-typing">
-            Conócenos, nuestros logros y contactos
-          </p>
+        
         </div>
       </div>
       
@@ -74,7 +72,7 @@ export default function Home() {
       
       {/* Sección Conócenos */}
       <div ref={conocenosRef} className="px-4 sm:px-6 py-10">
-        <h1 className="text-3xl sm:text-4xl text-center mt-10">CONÓCENOS</h1>
+        <h1 className="text-3xl sm:text-4xl text-center mt-20">CONÓCENOS</h1>
         <p className="text-balance text-center mt-10 font-abc text-lg sm:text-2xl">
         En AMID, trabajamos con pasión para transformar vidas y promover un mundo más inclusivo. 
         Somos una asociación dedicada a apoyar a personas con discapacidad, sus familias y 
