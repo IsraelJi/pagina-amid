@@ -6,20 +6,20 @@ export default function Preguntas() {
     {
       key: "1",
       ariaLabel: "Accordion 1",
-      title: "Primer Elemento",
+      title: "¿Cómo puedo formar parte de la asociación?",
       subtitle: "Haz clic para expandir el primer ítem",
       content: "Explora el contenido del primer accordion, diseñado para proporcionar información clara y específica."
     },
     {
       key: "2",
       ariaLabel: "Accordion 2",
-      title: "Segundo Elemento",
+      title: "¿Cúal es su horario de atención?",
       subtitle: (
         <span>
           Toca para ver <strong>más detalles</strong>
         </span>
       ),
-      content: "Este accordion contiene información única, ideal para destacar puntos clave o datos adicionales."
+      content: "Lunes a viernes de 9:00 a 18:00 horas."
     },
     {
       key: "3",
