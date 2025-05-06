@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 const Carrusel: React.FC = () => {
   const [activeSlide, setActiveSlide] = useState(0);
+  const router = useRouter();
 
   const slides = [
     {
@@ -21,6 +23,10 @@ const Carrusel: React.FC = () => {
 
   const handleIndicatorClick = (index: number) => {
     setActiveSlide(index);
+  };
+
+  const handleImageClick = () => {
+    router.push('/Comision1');
   };
 
   return (
@@ -53,8 +59,9 @@ const Carrusel: React.FC = () => {
           >
             <img
               src={slide.image}
-              className="block w-full h-[60vh] sm:h-[50vh] object-cover"
+              className="block w-full h-[60vh] sm:h-[50vh] object-cover cursor-pointer"
               alt={`Diapositiva ${index + 1}`}
+              onClick={handleImageClick}
             />
             <div className="absolute inset-x-[10%] bottom-3 py-3 text-center text-white bg-black bg-opacity-50 sm:inset-x-[15%] sm:bottom-5 sm:py-5">
               <h5 className="text-base sm:text-xl">{slide.title}</h5>
