@@ -159,19 +159,19 @@ export default function Home() {
             cargo='Presidente'
             estudio='Fundador'
             nombre='Felipe Bravo'
-            url='https://i.pravatar.cc/150?u=a042581f4e29026704d'
+            url=''
           />
           <Card
             cargo='Fundador'
             estudio='Vicepresidente'
             nombre='Javier Palomino'
-            url='https://i.pravatar.cc/150?u=a042581f4e29026024d'
+            url=''
           />
           <Card
             cargo='Fundador'
             estudio='Secretaria General'
             nombre='Yetmary Corona'
-            url='https://i.pravatar.cc/150?u=a04258114e29026702d'
+            url=''
           />
         </div>
       </div>
